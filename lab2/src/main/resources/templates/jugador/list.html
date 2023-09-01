@@ -21,11 +21,12 @@
                     <th>Club</th>
                     <th>Seleccion</th>
                 </tr>
-                <tr th:each="jugador, info: ${listajugadores}">
+                <tr th:each=" jugador,info:${listajugadores}">
                     <td th:text="${info.index + 1}"></td>
                     <td th:text="${jugador.nombre}"></td>
                     <td th:text="${jugador.edad}"></td>
                     <td th:text="${jugador.posicion}"></td>
+                    <td th:text="${jugador.club}"></td>
                     <td th:text="${jugador.idseleccion}"></td>
                     <td><a class="btn btn-danger" th:href="@{'/lab2/jugador/borrar?id=' + ${jugador.jugadorId}}">Borrar</a></td>
                 </tr>

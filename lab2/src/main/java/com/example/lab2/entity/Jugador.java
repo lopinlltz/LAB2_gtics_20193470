@@ -24,6 +24,9 @@ public class Jugador {
     @Column(name = "posicion", nullable = false, length = 45)
     private String posicion;
 
+    @Column(name = "club", nullable = false, length = 45)
+    private String club;
+
     @Column(name = "idseleccion", nullable = false)
     private Integer idseleccion;
 
